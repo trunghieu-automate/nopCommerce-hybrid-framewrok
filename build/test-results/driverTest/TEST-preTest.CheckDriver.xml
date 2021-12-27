@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="preTest.CheckDriver" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-20T03:20:19" hostname="TRUNGHIEU-AUTOM" time="0.683">
+  <properties/>
+  <testcase name="Chrome_Test[0](public void preTest.CheckDriver.Chrome_Test(java.lang.reflect.Method))" classname="preTest.CheckDriver" time="0.683"/>
+  <system-out><![CDATA[[INFO ] - 20-11-2021 10:20:20 - [Test worker] Log - Chrome_Test test is starting.
+[INFO ] - 20-11-2021 10:20:20 - [Test worker] Log - Chrome_Test test is succeed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

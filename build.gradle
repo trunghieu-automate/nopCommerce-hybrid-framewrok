@@ -1,0 +1,106 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.141.59'
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    implementation group: 'org.testng', name: 'testng', version: '6.14.3'
+    testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
+
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.0'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.0'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.0'
+
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+
+}
+test {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/registerTC-runner.xml' //location of our testNG.xml
+        outputDirectory = file("$projectDir/report-output")
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
+task registerTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/registerTC-runner.xml' //location of our testNG.xml
+        description "Register page test"
+    }
+}
+
+task loginTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/loginTC-runner.xml' //location of our testNG.xml
+        description "Login page test"
+    }
+}
+
+task myAccountTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/myAccountTC-runner.xml' //location of our testNG.xml
+        description "My account page test, update customer info, add addresses, change password, add and view product reviews"
+    }
+}
+
+task searchTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/searchTC-runner.xml' //location of our testNG.xml
+        description "Search and advanced search test with multiple input"
+    }
+}
+
+task sortDisplayTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/sortDisplayTC-runner.xml' //location of our testNG.xml
+        description "Sort and display function testing"
+    }
+}
+
+task orderTest(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/orderTC-runner.xml' //location of our testNG.xml
+        description "Checkout with cheque, credit card and re-order function tests"
+    }
+}
+
+task genRandomUser(type: Test) {
+    useTestNG() { //Tells Gradle to use TestNG
+        suites 'src/test/resources/registerRandomUser.xml' //location of our testNG.xml
+        description "Generate a user for manual test"
+        exclude 'src/test/java/testcases/*'
+        includeGroups 'preparation'
+    }
+
+}
+

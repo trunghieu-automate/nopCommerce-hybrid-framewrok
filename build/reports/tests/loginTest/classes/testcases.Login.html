@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testcases.Login</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testcases.Login</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testcases.html">testcases</a> &gt; Login</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">14.986s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">TC_01_Login_With_Empty_Data[0](public void testcases.Login.TC_01_Login_With_Empty_Data(java.lang.reflect.Method))</td>
+<td class="success">0.260s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_02_Login_With_Invalid_Email[0](public void testcases.Login.TC_02_Login_With_Invalid_Email(java.lang.reflect.Method))</td>
+<td class="success">0.314s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_03_Login_With_Unregistered_Email[0](public void testcases.Login.TC_03_Login_With_Unregistered_Email(java.lang.reflect.Method))</td>
+<td class="success">1.596s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_04_Login_With_Registered_Email_Without_Password[0](public void testcases.Login.TC_04_Login_With_Registered_Email_Without_Password(java.lang.reflect.Method))</td>
+<td class="success">8.433s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_05_Login_With_Registered_Email_With_Wrong_Password[0](public void testcases.Login.TC_05_Login_With_Registered_Email_With_Wrong_Password(java.lang.reflect.Method))</td>
+<td class="success">1.944s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_06_Login_Successfully[0](public void testcases.Login.TC_06_Login_Successfully(java.lang.reflect.Method))</td>
+<td class="success">2.439s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[INFO ] - 21-11-2021 11:58:41 - [Test worker] Log - Opening Chrome browser!
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_01_Login_With_Empty_Data test is starting.
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_01_Login_With_Empty_Data - Step 01: Click to Login button
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_01_Login_With_Empty_Data - Step 02: Verify error message at email field is 'Please enter your email'
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_01_Login_With_Empty_Data test is succeed.
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_02_Login_With_Invalid_Email test is starting.
+[INFO ] - 21-11-2021 11:58:45 - [Test worker] Log - TC_02_Login_With_Invalid_Email - Step 01: Enter to email field with text: abc@ 12
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_02_Login_With_Invalid_Email - Step 02: Click to login button 
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_02_Login_With_Invalid_Email - Step 03: verify error message at email field is 'Wrong email'
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_02_Login_With_Invalid_Email test is succeed.
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_03_Login_With_Unregistered_Email test is starting.
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_03_Login_With_Unregistered_Email - Step 01: Enter to email field with text: abc@ab.cpc
+[INFO ] - 21-11-2021 11:58:46 - [Test worker] Log - TC_03_Login_With_Unregistered_Email - Step 02: Click to login button 
+[INFO ] - 21-11-2021 11:58:47 - [Test worker] Log - TC_03_Login_With_Unregistered_Email - Step 03: verify error message appear with text 'Login was unsuccessful. Please correct the errors and try again.
+No customer account found'
+[INFO ] - 21-11-2021 11:58:47 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:58:47 - [Test worker] Log - TC_03_Login_With_Unregistered_Email test is succeed.
+[INFO ] - 21-11-2021 11:58:47 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password test is starting.
+[INFO ] - 21-11-2021 11:58:47 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 01: Click to register top nav bar
+[INFO ] - 21-11-2021 11:58:48 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 02: Enter to first name text box with: Lorrie
+[INFO ] - 21-11-2021 11:58:48 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 03: Enter to last name textbox with:Baniard
+[INFO ] - 21-11-2021 11:58:48 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 04:  Enter to email textbox with:lbaniard45@seesaa.net
+[INFO ] - 21-11-2021 11:58:49 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 05: Enter to password textbox with:djnsu430
+[INFO ] - 21-11-2021 11:58:49 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 06: Enter to confirm Password textbox with:djnsu430
+[INFO ] - 21-11-2021 11:58:49 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 07: Click to register button
+[INFO ] - 21-11-2021 11:58:52 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 08: Log out by click logout at top nav bar
+[INFO ] - 21-11-2021 11:58:53 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Pre-condition Step 09: Click to login button at top nav bar
+[INFO ] - 21-11-2021 11:58:54 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Step 01: Enter to email field with valid registered email: lbaniard45@seesaa.net
+[INFO ] - 21-11-2021 11:58:54 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Step 02: Click to login button
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password - Step 03: Verify login unsuccessfully and error message displayed: 'Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect'
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_04_Login_With_Registered_Email_Without_Password test is succeed.
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password test is starting.
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password - Step 01: Enter to email field with valid registered email: lbaniard45@seesaa.net
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password - Step 02: Enter to password field with valid registered email: djnsu4301234
+[INFO ] - 21-11-2021 11:58:56 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password - Step 03: Click to login button
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password - Step 04: Verify login unsuccessfully and error message displayed: 'Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect'
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_05_Login_With_Registered_Email_With_Wrong_Password test is succeed.
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_06_Login_Successfully test is starting.
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_06_Login_Successfully - Step 01: Enter to email field with valid registered email: lbaniard45@seesaa.net
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_06_Login_Successfully - Step 02: Enter to password field with valid registered email: djnsu430
+[INFO ] - 21-11-2021 11:58:58 - [Test worker] Log - TC_06_Login_Successfully - Step 03: Click to login button
+[INFO ] - 21-11-2021 11:59:00 - [Test worker] Log - TC_06_Login_Successfully - Step 04: verify home page's slider is displayed
+[INFO ] - 21-11-2021 11:59:00 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 11:59:00 - [Test worker] Log - TC_06_Login_Successfully test is succeed.
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 34376
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 21, 2021 11:58:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at Nov 21, 2021, 11:59:02 AM</p>
+</div>
+</div>
+</body>
+</html>

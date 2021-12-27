@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testcases.Register</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testcases.Register</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testcases.html">testcases</a> &gt; Register</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.300s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">TC_01_Empty_Data[0](public void testcases.Register.TC_01_Empty_Data(java.lang.reflect.Method))</td>
+<td class="success">0.425s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_02_Invalid_Email[0](public void testcases.Register.TC_02_Invalid_Email(java.lang.reflect.Method))</td>
+<td class="success">0.295s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_03_Valid_Info[0](public void testcases.Register.TC_03_Valid_Info(java.lang.reflect.Method))</td>
+<td class="success">3.321s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_04_Email_Exists[0](public void testcases.Register.TC_04_Email_Exists(java.lang.reflect.Method))</td>
+<td class="success">4.368s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_05_Password_Less_Than_6_Chars[0](public void testcases.Register.TC_05_Password_Less_Than_6_Chars(java.lang.reflect.Method))</td>
+<td class="success">0.380s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC_06_ConfirmPassword_Not_Match[0](public void testcases.Register.TC_06_ConfirmPassword_Not_Match(java.lang.reflect.Method))</td>
+<td class="success">0.511s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[INFO ] - 21-11-2021 08:00:16 - [Test worker] Log - Opening Chrome browser!
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data test is starting.
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 01: Click to Register button
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 02: Verify First Name field error message
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 03: Verify Last Name field error message
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 04: Verify email field error message
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 05: Verify password field error message
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data - Step 06: Verify confirm password field error message
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_01_Empty_Data test is succeed.
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_02_Invalid_Email test is starting.
+[INFO ] - 21-11-2021 08:00:20 - [Test worker] Log - TC_02_Invalid_Email - Step 01: Enter invalid emailabc @ 123
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_02_Invalid_Email - Step 02: Click to Register button
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_02_Invalid_Email - Step 03: Verify email validation message
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_02_Invalid_Email test is succeed.
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info test is starting.
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info - Step 01: Enter to first name text box with: Derrek
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info - Step 02: Enter to last name textbox with:Olennikov
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info - Step 03:  Enter to email textbox with:dolennikov4k@npr.org
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info - Step 04: Enter to password textbox with:EkbSLp
+[INFO ] - 21-11-2021 08:00:21 - [Test worker] Log - TC_03_Valid_Info - Step 05: Enter to confirm Password textbox with:EkbSLp
+[INFO ] - 21-11-2021 08:00:22 - [Test worker] Log - TC_03_Valid_Info - Step 06: Click to register button
+[INFO ] - 21-11-2021 08:00:24 - [Test worker] Log - TC_03_Valid_Info - Step 07: Verify register success message
+[INFO ] - 21-11-2021 08:00:24 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:24 - [Test worker] Log - TC_03_Valid_Info test is succeed.
+[INFO ] - 21-11-2021 08:00:24 - [Test worker] Log - TC_04_Email_Exists test is starting.
+[INFO ] - 21-11-2021 08:00:24 - [Test worker] Log - TC_04_Email_Exists - Pre-condition Step 01: Log out by click logout at top nav bar
+[INFO ] - 21-11-2021 08:00:26 - [Test worker] Log - TC_04_Email_Exists - Pre-condition Step 02: Click register button on top nav bar
+[INFO ] - 21-11-2021 08:00:27 - [Test worker] Log - TC_04_Email_Exists - Step 01: Enter to first name text box with: Derrek
+[INFO ] - 21-11-2021 08:00:27 - [Test worker] Log - TC_04_Email_Exists - Step 02: Enter to last name textbox with:Olennikov
+[INFO ] - 21-11-2021 08:00:27 - [Test worker] Log - TC_04_Email_Exists - Step 03:  Enter to Email textbox with:dolennikov4k@npr.org
+[INFO ] - 21-11-2021 08:00:27 - [Test worker] Log - TC_04_Email_Exists - Step 04: Enter to Password textbox with:EkbSLp
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_04_Email_Exists - Step 05: Enter to Confirm Password textbox with:EkbSLp
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_04_Email_Exists - Step 06: Click to register button
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_04_Email_Exists - Step 07: Verify error message email text box is &quot;The specified email already exists&quot;
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_04_Email_Exists test is succeed.
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_05_Password_Less_Than_6_Chars test is starting.
+[INFO ] - 21-11-2021 08:00:28 - [Test worker] Log - TC_05_Password_Less_Than_6_Chars - Step 01: Enter to Password textbox with:12345
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_05_Password_Less_Than_6_Chars - Step 02: Click to register button
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_05_Password_Less_Than_6_Chars - Step 03: Verify password validation error message displayed with text &quot;Password must meet the following rules:
+must have at least 6 characters&quot;
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_05_Password_Less_Than_6_Chars test is succeed.
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match test is starting.
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match - Step 01: Enter to Password textbox with:123456
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match - Step 02: Enter to confirm password textbox with:12345
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match - Step 03: Click to register button
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match - Step 04: Verify confirm password validation error message displayed with text 'The password and confirmation password do not match.'
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log -  -------------------------- PASSED -------------------------- 
+[INFO ] - 21-11-2021 08:00:29 - [Test worker] Log - TC_06_ConfirmPassword_Not_Match test is succeed.
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 4717
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 21, 2021 8:00:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at Nov 21, 2021, 8:00:31 AM</p>
+</div>
+</div>
+</body>
+</html>
